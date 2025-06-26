@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FizzBuzz en el DOM</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 4px 0; }
+  </style>
+</head>
+<body>
+  <h1>FizzBuzz 1–100</h1>
+  <ul id="fizzbuzz-list"></ul>
+
+  <script>
+    // Selecciona el contenedor donde se imprimirá la lista
+    const lista = document.getElementById('fizzbuzz-list');
+
+    // Recorre los números del 1 al 100
+    for (let i = 1; i <= 100; i++) {
+      const item = document.createElement('li');
+
+      // Aplica las reglas de FizzBuzz
+      if (i % 3 === 0 && i % 5 === 0) {
+        item.textContent = 'FizzBuzz';
+      } else if (i % 3 === 0) {
+        item.textContent = 'Fizz';
+      } else if (i % 5 === 0) {
+        item.textContent = 'Buzz';
+      } else {
+        item.textContent = i;
+      }
+
+      // Agrega el elemento a la lista en el DOM
+      lista.appendChild(item);
+    }
+  </script>
+</body>
+</html>

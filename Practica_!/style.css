@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    background-color: rgb(210, 222, 231);   
+}
+
+#resultadoCofla{
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    margin: 10%;
+    border-radius: 30px;
+    background-color: #000;
+    color: rgb(243, 247, 250);
+}
+
+#resultadoRoberto{
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    margin: 10%;
+    background-color: #000;
+    border-radius: 30px;
+    color: rgb(243, 247, 250);
+}
+
+#resultadoPedro{
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    margin: 10%;
+    border-radius: 30px;
+    background-color: #000;
+    color: rgb(243, 247, 250);
+}
